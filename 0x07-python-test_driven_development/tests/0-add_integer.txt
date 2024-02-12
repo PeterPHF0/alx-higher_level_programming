@@ -16,6 +16,13 @@ Numbers
         >>> add_integer(3.0, 4.0)
         7
 
+The second argument is optional - by default, it is 98.
+
+::
+
+    >>> add_integer(2)
+    100
+
 Non-Numbers
 ===========
 ``add_integer()`` raises a TypeError if the argument type is non-int and non-float
@@ -37,10 +44,38 @@ Non-Numbers
         Traceback (most recent call last):
         TypeError: a must be an integer
 
+	>>> add_integer(2.3, None)
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
         >>> add_integer(float('inf'))
         Traceback (most recent call last):
         OverflowError: cannot convert float infinity to integer
 
 	>>> add_integer(3, None)
 	Traceback (most recent call last):
-	TypeError: b must be an integer	
+	TypeError: b must be an integer
+
+If both arguments are non-integers and non-floats, a TypeError message is only
+printed for the first argument.
+
+::
+
+    >>> add_integer("hello", "there")
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+And again with NaN numbers.
+
+::
+
+    >>> add_integer(float('nan'))
+    Traceback (most recent call last):
+    ValueError: cannot convert float NaN to integer
+
+::
+
+    >>> add_integer(2, float('nan'))
+    Traceback (most recent call last):
+    ValueError: cannot convert float NaN to integer
+
