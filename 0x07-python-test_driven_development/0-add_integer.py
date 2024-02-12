@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""defines an integer addition function"""
+"""Defines an integer addition function"""
 
 def add_integer(a, b=98):
-    """returns the result of adding its 2 integer aruguments
+    """Return the result of adding its 2 integer aruguments
 
-    floating points numbers are type casted to int before addition
+    Floating points numbers are type casted to int before addition
 
-    raises:
+    Raises:
         TypeError if either a or b is a non-integer and non-float
     """
     if type(a) not in [int, float]:
