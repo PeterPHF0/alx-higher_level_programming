@@ -2,11 +2,12 @@
 ===========================
 How to Use 0-add_integer.py
 ===========================
-It defines a function ``add_integer()`` that adds 2 integers
 
+It defines a function ``add_integer()`` that adds 2 integers
 
 Numbers
 =======
+
 ``add_integer(...)`` adds the 2 argumnets if they are of type int or float
 
 ::
@@ -26,6 +27,7 @@ The second argument is optional - by default, it is 98.
 
 Non-Numbers
 ===========
+
 ``add_integer(...)`` raises a TypeError if the argument type is non-int and non-float
 
 ::
