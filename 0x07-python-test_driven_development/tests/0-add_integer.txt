@@ -22,6 +22,7 @@ Numbers
 The second argument is optional - by default, it is 98.
 
 ::
+
 	>>> add_integer(2)
 	100
 
