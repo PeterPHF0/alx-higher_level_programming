@@ -1,13 +1,13 @@
 
 ===========================
-How to use 0-add_integer.py
+How to Use 0-add_integer.py
 ===========================
-it defines a function ``add_integer()`` that adds 2 integers
+It defines a function ``add_integer()`` that adds 2 integers
 
 
 Numbers
 =======
-``add_integer()`` adds the 2 argumnets if they are of type int or float
+``add_integer(...)`` adds the 2 argumnets if they are of type int or float
 
 ::
         >>> add_integer = __import__('0-add_integer').add_integer
@@ -26,7 +26,7 @@ The second argument is optional - by default, it is 98.
 
 Non-Numbers
 ===========
-``add_integer()`` raises a TypeError if the argument type is non-int and non-float
+``add_integer(...)`` raises a TypeError if the argument type is non-int and non-float
 
 ::
         >>> add_integer("abc", 3)
@@ -61,8 +61,7 @@ Non-Numbers
 	Traceback (most recent call last):
 	TypeError: b must be an integer
 
-If both arguments are non-integers and non-floats, a TypeError message is only
-printed for the first argument.
+If both arguments are non-integers and non-floats, a TypeError message is only printed for the first argument.
 
 ::
 
