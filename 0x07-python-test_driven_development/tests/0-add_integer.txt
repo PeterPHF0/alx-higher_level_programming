@@ -52,6 +52,10 @@ Non-Numbers
         Traceback (most recent call last):
         OverflowError: cannot convert float infinity to integer
 
+	>>> add_integer(2, float('inf'))
+    	Traceback (most recent call last):
+    	OverflowError: cannot convert float infinity to integer
+
 	>>> add_integer(3, None)
 	Traceback (most recent call last):
 	TypeError: b must be an integer
