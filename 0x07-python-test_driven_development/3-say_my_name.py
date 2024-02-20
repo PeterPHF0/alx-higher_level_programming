@@ -2,7 +2,7 @@
 """Defines a name-printing function"""
 
 def say_my_name(first_name, last_name=""):
-    """Print the name
+    '''Print the name
 
     Args:
         first_name (str): first name
@@ -10,7 +10,7 @@ def say_my_name(first_name, last_name=""):
 
     Raises:
         TypeError: If either of first_name or last_name are not strings.
-    """
+    '''
     if type(first_name) != str:
         raise TypeError('first_name must be a string')
     elif type(last_name) != str:
