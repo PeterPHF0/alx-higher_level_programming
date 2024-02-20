@@ -12,7 +12,7 @@ Usage
 
 ::
 
-	>>> say_may_name = __import__(3-say_my_name).say_my_name
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
 	>>> say_my_name("Peter", "Iskandar")
 	My name is Peter Iskandar
 	
@@ -21,7 +21,7 @@ it is allright if you only enter the `first_name`
 
 ::
 
-	>>> say_my_name("Peter")
+	>>> say_my_name("Peter") #doctest: +NORMALIZE_WHITESPACE
 	My name is Peter
 
 Invalid Names
