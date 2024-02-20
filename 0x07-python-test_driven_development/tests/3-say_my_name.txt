@@ -17,7 +17,7 @@ Usage
 	My name is Peter Iskandar
 	
 
-it is allright if you only enter the `first_name`
+It is allright if you only enter the `first_name`
 
 ::
 
@@ -27,7 +27,7 @@ it is allright if you only enter the `first_name`
 Invalid Names
 =============
 
-entering no argumnet
+Entering no argumnet
 
 ::
 
@@ -36,7 +36,7 @@ entering no argumnet
 	TypeError: say_my_name() missing 1 required positional argument: 'first_name'
 
 
-if `first_name` or `last_name` wasn't a string
+If `first_name` or `last_name` wasn't a string
 
 ::
 
