@@ -1,6 +1,6 @@
-=========================
-How to use say_my_name.py
-=========================
+===========================
+How to use 3-say_my_name.py
+===========================
 
 This module defines the ``say_my_name(first_name, last_name="")`` function.
 
