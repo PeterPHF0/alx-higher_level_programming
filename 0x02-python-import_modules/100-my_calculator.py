@@ -9,15 +9,16 @@ if __name__ == '__main__':
     op_dict = {'+': add, '-': sub, '*': mul, '/': div}
 
     if num_args != 3:
-        print("Usage: ./100-my_calculator.py <a> <operator> <b>\n")
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
 
     if not sys.argv[2] in operators:
-        print("Unknown operator. Available operators: +, -, * and /\n")
+        print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
 
     op_chosen = op_dict.get(sys.argv[2])
     operand1 = int(sys.argv[1])
     operand2 = int(sys.argv[3])
 
-    print("{} {} {} = {}".format(sys.argv[1], sys.argv[2], sys.argv[3], op_chosen(operand1, operand2)))
+    print("{} {} {} = {}".format(sys.argv[1], sys.argv[2], sys.argv[3], 
+                                op_chosen(operand1, operand2)))
