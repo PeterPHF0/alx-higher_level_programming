@@ -4,6 +4,7 @@ if __name__ == '__main__':
     import sys
 
     print("{} ".format(len(sys.argv) - 1), end='')
+
     if len(sys.argv) - 1 == 0:
         print("arguments.", end='')
     elif len(sys.argv) - 1 == 1:
