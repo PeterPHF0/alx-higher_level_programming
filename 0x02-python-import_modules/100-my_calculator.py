@@ -17,8 +17,7 @@ if __name__ == '__main__':
         exit(1)
 
     op_chosen = op_dict.get(sys.argv[2])
-    operand1 = int(sys.argv[1])
-    operand2 = int(sys.argv[3])
+    a = int(sys.argv[1])
+    b = int(sys.argv[3])
 
-    print("{} {} {} = {}".format(sys.argv[1], sys.argv[2], sys.argv[3], 
-                                op_chosen(operand1, operand2)))
+    print("{} {} {} = {}".format(a, sys.argv[2], b, op_chosen(a, b)))
